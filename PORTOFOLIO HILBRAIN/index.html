@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Hilbrain Yusuf Saputra</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#080b16;
+    color:white;
+    overflow-x:hidden;
+}
+
+.bg{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at 20% 20%,#5d3bff55,transparent 30%),
+    radial-gradient(circle at 80% 30%,#00d4ff55,transparent 30%),
+    radial-gradient(circle at 50% 80%,#ff00aa33,transparent 30%);
+    filter:blur(80px);
+    z-index:-1;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.card{
+    width:100%;
+    max-width:1100px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:30px;
+    padding:50px;
+    box-shadow:0 0 40px rgba(0,212,255,0.15);
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.profile{
+    flex:1;
+}
+
+.profile h1{
+    font-size:4rem;
+    line-height:1;
+    background:linear-gradient(90deg,#00d4ff,#7a5cff,#ff00aa);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.profile p{
+    margin-top:15px;
+    color:#c9c9c9;
+}
+
+.photo{
+    width:230px;
+    height:230px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#00d4ff,#7a5cff,#ff00aa);
+    padding:5px;
+    overflow:hidden;
+}
+
+.photo div{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background:#0f1324;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.photo div img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.grid{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.box{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:20px;
+    transition:.4s;
+}
+
+.box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(0,212,255,.25);
+}
+
+.box h3{
+    color:#00d4ff;
+    margin-bottom:10px;
+}
+
+.skill{
+    display:inline-block;
+    margin:5px;
+    padding:8px 15px;
+    border-radius:20px;
+    background:rgba(122,92,255,.2);
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(90deg,#00d4ff,#7a5cff);
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#888;
+}
+
+@media(max-width:768px){
+    .profile h1{
+        font-size:2.8rem;
+    }
+
+    .top{
+        justify-content:center;
+        text-align:center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<section class="hero">
+<div class="card">
+
+<div class="top">
+
+<div class="profile">
+<h1>Hilbrain Yusuf Saputra</h1>
+<p>
+Mahasiswa • Freelancer • Travel Field Staff
+</p>
+
+<a href="#" class="btn">Lihat Portofolio</a>
+</div>
+
+<div class="photo">
+<div><img src="profil/profile.jpeg" alt="Profil Hilbrain Yusuf Saputra"></div>
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="box">
+<h3>Tentang Saya</h3>
+<p>
+Memiliki pengalaman kerja lapangan dan pelayanan pelanggan
+di Airlangga Travel dengan kemampuan komunikasi,
+adaptasi, dan kerja tim yang baik.
+</p>
+</div>
+
+<div class="box">
+<h3>Pengalaman</h3>
+<p>
+Freelance & Operasional Lapangan
+Airlangga Travel
+(2024 - Sekarang)
+</p>
+</div>
+
+<div class="box">
+<h3>Soft Skills</h3>
+<span class="skill">Komunikasi</span>
+<span class="skill">Leadership</span>
+<span class="skill">Public Speaking</span>
+<span class="skill">Teamwork</span>
+</div>
+
+<div class="box">
+<h3>Kontak</h3>
+<p>Email: hilbrainyusufsaputra@gmail.com</p>
+<p>Instagram: @hilbrain_y.s</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Portfolio by Hilbrain
+</footer>
+
+</body>
+</html>
